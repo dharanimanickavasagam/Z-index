@@ -1,0 +1,88 @@
+body {
+  overflow-x: hidden; 
+  width: 100%;
+  color: whitesmoke;
+  background-color: darkslateblue;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1em;
+  margin: 0 0;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 300;
+}
+
+.mainContent {
+  position: relative;
+}
+
+.mainCardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("images/tulip.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1200px;
+}
+
+.subCardsContainer {
+  position: absolute;
+  z-index:1;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  top:1000px;
+
+}
+.subCards:first-child {
+  z-index: 100;
+}
+
+.subCards {
+  height: 20rem;
+  width: 30rem;
+  background-image: url("images/red_tulip_edited.png");
+  position: relative;
+  margin: 1rem 0;
+}
+
+.subcardsTextAndButton {
+  background-color: black;
+  opacity: 0.7;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.subCardText {
+  bottom: 0;
+  padding: 1rem;
+  font-weight: 300;
+}
+
+.subCardButton {
+  padding: 1rem;
+  width: 5rem;
+  background-color: goldenrod;
+  cursor: pointer;
+  color: black;
+  font-weight: 100;
+  margin-top: 1rem;
+}
